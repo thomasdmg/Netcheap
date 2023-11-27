@@ -77,7 +77,7 @@
                     <i id="left" class="fas fa-angle-left"></i>
                     <div class="carousel">
                             <?php
-                                $data = POST_REQUEST("http://localhost/api_rest_series_series/index.php?process=get_popular", null);
+                                $data = POST_REQUEST("http://localhost/api_rest_series/index.php?process=get_popular", null);
                                 if(isset($data['response']) && !empty($data['response'])) {
                                     foreach($data['response'] as $serie) {
                                         $thumbnailPath = "../images/pp/" . $serie['serie_id'] . ".jpg";
@@ -103,7 +103,7 @@
                     <i id="left2" class="fas fa-angle-left"></i>
                     <div class="carousel2">
                             <?php
-                                $data = POST_REQUEST("http://localhost/api_rest_series_series/index.php?process=get_recommendation_lite", 
+                                $data = POST_REQUEST("http://localhost/api_rest_series/index.php?process=get_recommendation_lite", 
                                 array("user_id" => $_SESSION['user_id'], "limit" => 15, "sort" => -1));
 
                                 if(isset($data['response']) && !empty($data['response'])) {
@@ -131,7 +131,7 @@
                     <i id="left3" class="fas fa-angle-left"></i>
                     <div class="carousel3">
                             <?php
-                                $data = POST_REQUEST("http://localhost/api_rest_series_series/index.php?process=get_recommendation_lite", 
+                                $data = POST_REQUEST("http://localhost/api_rest_series/index.php?process=get_recommendation_lite", 
                                 array("user_id" => $_SESSION['user_id'], "limit" => 15, "sort" => 1));
 
                                 if(isset($data['response']) && !empty($data['response'])) {
