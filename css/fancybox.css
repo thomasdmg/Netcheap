@@ -1,0 +1,156 @@
+
+body.fancybox-active {
+    overflow: hidden;
+  }
+  
+  .fancybox-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+  }
+  .fancybox-content{
+    height: 850px !important;
+    width: 660px !important;
+    padding: 0 !important;
+    overflow-y: hidden !important;
+  }
+
+  /* .fancybox-container{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  max-width: 100%;
+  max-height: 100%;
+  
+  } */
+  
+  
+#main-container{
+    
+    height: 850px;
+        
+    width: 660px;
+        
+    display: flex;
+        
+    flex-direction: column;
+        
+}
+                    
+#header{
+    height: 9%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, rgb(24 24 24) 70%, rgb(52 52 52) 100%);
+}   
+                
+#content{                    
+    height: 47%;                     
+    background: linear-gradient(to bottom, rgb(52 52 52) 0%, rgb(24 24 24) 70%);
+}
+            
+#img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 44%;
+}
+    
+#img img {
+    height: 120%;
+    object-fit: cover;
+}
+        
+#title{
+    
+    margin-left: 30px;
+                
+    color: #f5ebeb;
+}
+    
+h1{
+    font-family: sans-serif;    
+}
+
+h2{
+    font-family: sans-serif;
+}
+
+#close{
+
+    align-items: center;
+
+    display: flex;
+
+    position: sticky;
+
+    margin-left: 380px;
+}
+
+#close .close_icon{
+    
+font-size: 2em;
+    
+color: white;
+transition: all 0.5s ease-in-out;
+}
+
+#close .close_icon :hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+ #header_desc{
+    
+    display: flex;
+    
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+    
+#like{
+                
+    display: flex;
+                
+    align-items: center;
+}
+    
+.like_icon{
+    font-size: 1.8em;
+    color: white;
+    margin-right: 35px;
+    transition: all 0.5s ease-in-out;
+}
+    
+    p{
+        font-family: sans-serif;
+        color: #afafaf;
+        text-align: justify;
+        margin: 10px;
+    }
+    
+    #genre{
+        
+    margin-left: 30px;
+    }
+    
+    #desc{
+    
+margin-left: 30px;
+    
+margin-right: 30px;
+    
+height: 300px;
+    }
+
+    #description-text{
+        
+overflow-y: auto;
+        
+height: 230px;
+    }
